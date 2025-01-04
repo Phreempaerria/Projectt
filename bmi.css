@@ -1,0 +1,133 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url('219965.gif');
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    
+}
+
+.container{
+    max-width: 768px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.image-container{
+    background-color: #ece2ea56;
+}
+.image-container img{
+    width: 100%;
+}
+
+.form-container{
+    background:  #ffffffb7;
+    padding: 100px 40px;
+    text-align: center;
+    border-radius: 0px 5px 5px 0px;  
+}
+
+.form-container h1, .form-container h2{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #636262;
+    letter-spacing: 3px;
+}
+.form-container .form{
+    width: 340px;
+}
+
+.form-container input{
+    font-size: 16px;
+    display: block;
+    padding: 15px 0px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin: 20px 0px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.form-container input:focus{
+    outline: none;
+}
+
+
+.form-container input[type="submit"]{
+    background-color: #4e4253;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.form-container input[type="submit"]:hover{
+    background-color: #ffffff;
+}
+
+.popup{
+    position: absolute;
+    background: #ffffff;
+    padding: 50px 100px;
+    border-radius: 5px;
+    display: none;
+    text-align: center;
+    box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.5);
+}
+
+.bmi-score{
+    width: 100px;
+    height: 100px;
+    background: #ce9ed1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #fff;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.bmi-text{
+    margin: 20px 0px;
+    background: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.close-btn{
+    padding: 10px 30px;
+    font-size: 16px;
+    background: rgb(177, 118, 159);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .form-container{
+        width: 100%;
+    }
+    .image-container{
+        display: none;
+    }
+}
